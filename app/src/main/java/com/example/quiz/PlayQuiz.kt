@@ -58,7 +58,7 @@ class PlayQuiz : AppCompatActivity() {
         timeGiven = when(level)
         {
             "easy"-> 10000
-            "medium"-> 12000
+            "medium"-> 12500
             else-> 15000
         }
     }
