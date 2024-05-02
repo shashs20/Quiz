@@ -5,12 +5,15 @@ import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.quiz.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private var binding:ActivityMainBinding? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Thread.sleep(3000)
+        installSplashScreen()
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding?.root)
